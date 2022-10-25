@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 22:57:46 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/20 23:28:17 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/25 23:52:18 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void ft_putstr_fd(char *s, int fd)
 {
+	if(!s)
+		return ;
 	while(*s)
 	{
 		write(fd,s,1);

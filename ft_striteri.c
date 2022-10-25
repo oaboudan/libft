@@ -1,34 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 16:52:52 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/25 23:12:26 by oaboudan         ###   ########.fr       */
+/*   Created: 2022/10/21 16:17:29 by oaboudan          #+#    #+#             */
+/*   Updated: 2022/10/24 19:04:49 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void ft_striteri(char *s, void (*f)(unsigned int,char*))
 {
-	size_t	i;
-
+	unsigned int i;
+	if(!s || !f) 
+		return ;
 	i = 0;
-	if (n == 0)
-		return (0);
-	while ((s1[i] == s2[i]) && i < (n-1) && s1[i] && s2[i])
+	while(s[i])
+	{
+		f(i, &s[i]);
 		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	}
 }
+
+// void fnnnnnn(unsigned int i, char *c)
+// {
+// 	*c= *c - 32 ;
+// }
+
 // int main()
 // {
-//     const char s1[] = "oussama";
-//     const char s2[] = "oussam";
-
-//     printf("%d\n",ft_strncmp(s1,s2,7));
-//     //printf("%d",strncmp(s1,s2,7));
-//     return 0;
+// 	char str[] = "abcdef";
+// 	ft_striteri(str, fnnnnnn);
+// 	printf("%s", str);
 // }

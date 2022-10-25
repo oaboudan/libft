@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 13:00:37 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/18 20:37:15 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/26 00:18:36 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ char* ft_strrchr(const char *s, int c)
 	i = ft_strlen(s);
 	if(c < 0 || c > 128)
 		return (char *)s;
-	if(!s)
-		return (NULL);
+	// if(!s)
+	// 	return (NULL);
 	while (i >= 0)
 	{
     	if (s[i] == c)

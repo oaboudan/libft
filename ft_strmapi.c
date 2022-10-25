@@ -1,40 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 11:47:45 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/25 23:03:43 by oaboudan         ###   ########.fr       */
+/*   Created: 2022/10/21 14:26:04 by oaboudan          #+#    #+#             */
+/*   Updated: 2022/10/24 19:05:08 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+// char ft(unsigned int i, char c)
+// {
+// 	return i + c;
+// }
 
-char	*ft_strchr(const char *s, int c)
-{
-	size_t	i;
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
+{ 
+	unsigned int i;
+	if(!s)
+		return (NULL);
+	char *t = (char *)malloc(ft_strlen(s) + 1);
+	if(!t || !s)
+		return (NULL);
 	i = 0;
-	// if(c < 0 || c > 128)
-	// 	return (char *)s;
-	// if(c == 0)
-	// 	return (char *)(s + ft_strlen(s));
-	// if(!s)
-	// 	return (NULL);
-	while(i <= ft_strlen(s))
+	while(s[i])
 	{
-		if (s[i] == (char)c)
-        	return ((char *)&s[i]);
-    	i++;
+		t[i] = f(i, s[i]);
+		i++;
 	}
-	return (NULL);
+	t[i] = '\0';
+	return (t);
 }
 // int main()
 // {
-// 	//const char bb[] = "Valar oussama @boudan";
-// 	 char s[] = "tripouille";
-// 	printf("%s\n",ft_strchr(s, 't' + 256));
-// 	printf("%s",strchr(s, 't' + 256));	
+// 	printf("%s",ft_strmapi("123",ft));
 // }

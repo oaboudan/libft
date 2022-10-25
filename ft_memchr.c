@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 00:02:42 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/17 21:56:38 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/25 22:53:23 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,10 @@
 void    *ft_memchr(const void *s, int c, size_t n)
 {
 	size_t i;
-
 	i = 0;
 	// if (!s)
 	// 	return (NULL);
-	while(s && i < n)
+	while(n--)
 	{
 		if (*(char *)(s + i) == (char)c)
         	return ((void *)(s + i));

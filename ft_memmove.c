@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 20:45:00 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/17 19:01:41 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/25 22:42:56 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@
      dst1 = (char *)dst;
      src1 = (char *)src;
      i = 0;
-     if(!dst)
-          return NULL;
+    
       if (dst1 > src1)
       {
         while (len--)

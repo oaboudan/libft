@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 16:28:34 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/18 18:50:34 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/26 00:15:22 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
     str1 = (unsigned char *)s1;
     str2 = (unsigned char *)s2;
     i = 0;
-    if (!s1 || !s2 || n == 0)
+    if (n == 0)
         return (0);
     while(str1[i] == str2[i] && i < n - 1)
         i++;

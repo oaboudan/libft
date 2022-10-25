@@ -6,11 +6,11 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:16:13 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/19 17:08:44 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/26 00:30:36 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libc.h"
+#include "libft.h"
 char    *ft_strnstr(const char *hay, const char *ndl, size_t len)
 {
     size_t i;
@@ -18,9 +18,11 @@ char    *ft_strnstr(const char *hay, const char *ndl, size_t len)
     
     i = 0;
     j = 0;
-    if(ndl && !ndl[i])
-        return ((char *)hay);
-    while (ndl && hay && hay[i])
+    if(!*hay && !*ndl)
+        return (char *)hay;
+    if (!hay && len == 0)
+        return (NULL);
+    while (hay[i] != '\0')
     {
         while (hay[i + j] == ndl[j] && i + j < len && hay[i + j] != '\0')
             j++;

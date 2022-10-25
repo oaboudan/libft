@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 18:18:32 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/25 19:26:01 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/25 23:50:38 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,8 @@ char    **ft_split(char const *str, int c)
     int     j;
     int     cnt;
     
-
+    if (!str)
+        return (NULL);
     i = 0;
     cnt = -1;
     res = (char **)malloc(sizeof(char *) * (scount((char *)str, c) + 1));
