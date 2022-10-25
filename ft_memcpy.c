@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 19:58:18 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/17 18:58:27 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/25 18:02:54 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void *ft_memcpy(void *dst, const void *src, size_t n)
      dst1 = (char *)dst;
      src1 = (char *)src;
      i = 0;
-     if(!dst)
-          return (0);
+     if(dst == src)
+          return (dst);
      while (i < n)
      {
           dst1[i] = src1[i];

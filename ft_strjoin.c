@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 21:31:33 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/20 21:32:55 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/24 19:02:42 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 char    *ft_strjoin(char const *s1, char const *s2)
 {
     char *res;
-    int j;
-    int i;
+    size_t j;
+    size_t i;
 
     i = 0;
     j = 0;

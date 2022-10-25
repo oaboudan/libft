@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 17:27:25 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/21 00:04:09 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/21 01:26:46 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strdup(const char *str)
 	char *s;
 	int i;
 	
-	s = (char *) malloc (sizeof(ft_strlen(str) + 1));
+	s = (char *) malloc (ft_strlen(str) + 1);
 	 if (!s)
         return (NULL);
 	i = 0;

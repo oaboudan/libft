@@ -6,11 +6,12 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 22:00:38 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/20 22:09:20 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/25 16:49:11 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int numlength(int n)
+#include "libft.h"
+int numlength(long n)
 {
     int i;
 
@@ -33,33 +34,36 @@ int numlength(int n)
 char *ft_itoa(int n)
 {
     char *str;
-    int i;
     int len;
+    long z;
 
-    str = (char *)malloc(numlength(n)+ 1);
+    z = n;
+    len = 0;
+    str = (char *)malloc(numlength(z)+ 1);
     if (!str)
         return (NULL);
-    if (n < 0)
+    
+    if (z < 0)
     {
         str[0] = '-';
-        n *= -1;
+        z *= -1;
+        len++;
     }
-    len = numlength(n) + 1;
+    len += numlength(z);
     str[len] = '\0';
     len--;
-    while (n >= 0)
+    while (z >= 0)
     {
-        str[len] = n % 10 + '0';
-        n = n / 10;
+        str[len] = z % 10 + '0';
+        z = z / 10;
         len--;
-        if (n == 0)
+        if (z == 0)
             break;
     }
-
     return (str);
 }
 
 
-int main(){
-    printf("%s\n", ft_itoa(-12356));
-}
+// int main(){
+//     printf("%s\n", ft_itoa(2147483647));
+// }
