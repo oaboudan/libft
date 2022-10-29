@@ -1,33 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/27 02:30:50 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/27 16:00:24 by oaboudan         ###   ########.fr       */
+/*   Created: 2022/10/27 16:11:52 by oaboudan          #+#    #+#             */
+/*   Updated: 2022/10/27 16:46:34 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+void ft_lstadd_back(t_list **lst, t_list *new)
 {
-	while (lst)
-	{
-		if (lst->next == NULL)
-			return(lst);
-		lst = lst->next;
-	}
-	return (NULL);
-}
-// int main()
-// {
-// 	t_list *t1, *t2;
+	t_list	*last;
 	
-// 	t1 = ft_lstnew("oussama");
-// 	t2 = ft_lstnew("chaimaa");
-// 	t1->next = t2;
-// 	printf("%s",ft_lstlast(t1)->content);
-// }
+	if (!lst)
+		*lst = new;
+	else
+	{
+		last = ft_lstlast(*lst);
+		last->next = new;
+	}
+}
+int main()
+{
+	t_list *t1, *t2, *t3;
+	
+	t1 = ft_lstnew("oussama");
+	t2 = ft_lstnew("chaimaa");
+	t3 = ft_lstnew("test");
+	t1->next = t2;
+	ft_lstadd_back(&t1, t3);
+	printf("%s", ft_lstlast(t1)->content);
+}

@@ -6,9 +6,11 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 15:22:02 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/06 19:00:35 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/28 01:58:28 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int g)
 {
@@ -18,7 +20,7 @@ int	ft_isdigit(int g)
 // {
 // 	int bb = '9';
 // 	int i = ft_isdigit(bb);
-	
+
 // 		printf("%d", i);
 
 // }

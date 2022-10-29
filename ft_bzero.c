@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 17:26:03 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/12 17:17:11 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/28 01:54:25 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void ft_bzero(void *s, size_t n)
 {
-     ft_memset(s,0,n);
+	ft_memset(s,0,n);
 }
 // int main()
 // {
