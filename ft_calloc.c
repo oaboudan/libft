@@ -6,29 +6,30 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 18:46:12 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/19 17:17:23 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/30 22:52:58 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
- void *ft_calloc(size_t count, size_t size)
- {
-    void *p;
-    if(count == SIZE_MAX || size == SIZE_MAX)
-        return (NULL);
-    p = malloc(count*size);
-    if(!p)
-        return NULL;
-    ft_bzero(p,count*size);
-    return (p);
- }
+
+void	*ft_calloc(size_t count, size_t size)
+{
+	void	*p;
+
+	if (count == SIZE_MAX || size == SIZE_MAX)
+		return (NULL);
+	p = malloc (count * size);
+	if (!p)
+		return (NULL);
+	ft_bzero (p, count * size);
+	return (p);
+}
 //  int main()
 //  {
 //     int *array;
 //      *array1;
 //     int i = 0;
-   
+
 //    array1 = calloc(2, 7);
 //    printf("%d\n", *(array1));
 //    printf("%d\n", *(array1 + 1));

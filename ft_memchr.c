@@ -6,32 +6,34 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 00:02:42 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/25 22:53:23 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/30 23:08:40 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-  #include <string.h> 
-#include <stdio.h>
-void    *ft_memchr(const void *s, int c, size_t n)
+
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t i;
+	size_t	i;
+
 	i = 0;
-	// if (!s)
-	// 	return (NULL);
-	while(n--)
+	while (n--)
 	{
 		if (*(char *)(s + i) == (char)c)
-        	return ((void *)(s + i));
-    	i++;
+			return ((void *)(s + i));
+		i++;
 	}
 	return (NULL);
 }
 // int main()
 // {
-// 	char s[] = {0, 1, 2 ,3 ,4 ,5};
-// 	printf("%s\n",ft_memchr(s, 2 + 256, 3));
-// 	printf("%s\n",memchr(s, 2 + 256, 3));
-// 	//printf("%s",strchr(NULL,'@'));	
+// 	int s[] = {256, 1, 2 ,3 ,4 ,5};
+
+// 	int *p;
+// 	p = ft_memchr(s,1, 9);
+
+// 	printf("%d",p[5]);
+// 	// printf("%p\n",ft_memchr(s,2, 9));
+// 	// printf("%p\n",memchr(s, 2, 9));
+// 	// printf("%s",strchr(NULL,'@'));	
 // }

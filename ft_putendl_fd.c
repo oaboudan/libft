@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 22:56:33 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/25 23:52:23 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/30 23:27:25 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-    int	i;
+	int	i;
 
-    i = -1;
-    if (!s)
-        return ;
-    while (s[++i])
-        write (fd, &s[i], 1);
-    write (fd, "\n", 1);
+	i = -1;
+	if (!s)
+		return ;
+	while (s[++i])
+		write (fd, &s[i], 1);
+	write (fd, "\n", 1);
 }

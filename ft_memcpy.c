@@ -6,27 +6,27 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 19:58:18 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/25 18:02:54 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/30 23:19:01 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-     char *dst1;
-     char *src1;
-     size_t    i;
-     
-     dst1 = (char *)dst;
-     src1 = (char *)src;
-     i = 0;
-     if(dst == src)
-          return (dst);
-     while (i < n)
-     {
-          dst1[i] = src1[i];
-          i++;
-     }
-     return ((void *)dst);
+	char	*dst1;
+	char	*src1;
+	size_t	i;
+
+	dst1 = (char *)dst;
+	src1 = (char *)src;
+	i = 0;
+	if (dst == src)
+		return (dst);
+	while (i < n)
+	{
+		dst1[i] = src1[i];
+		i++;
+	}
+	return ((void *)dst);
 }

@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 11:47:45 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/25 23:03:43 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/30 23:33:16 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,11 @@ char	*ft_strchr(const char *s, int c)
 	size_t	i;
 
 	i = 0;
-	// if(c < 0 || c > 128)
-	// 	return (char *)s;
-	// if(c == 0)
-	// 	return (char *)(s + ft_strlen(s));
-	// if(!s)
-	// 	return (NULL);
-	while(i <= ft_strlen(s))
+	while (i <= ft_strlen(s))
 	{
 		if (s[i] == (char)c)
-        	return ((char *)&s[i]);
-    	i++;
+			return ((char *)&s[i]);
+		i++;
 	}
 	return (NULL);
 }

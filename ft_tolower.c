@@ -6,13 +6,13 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:01:34 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/10 23:07:48 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/31 00:21:46 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libc.h"
+#include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);

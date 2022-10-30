@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 13:32:02 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/17 19:04:12 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/30 23:47:01 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,21 @@
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-    size_t  i;
-    size_t  srclen;
+	size_t	i;
+	size_t	srclen;
 
-    i = 0;
-    srclen = ft_strlen(src);
-    if(size != 0)
-    {
-        while (src[i] && i < size - 1)
-        {
-            dest[i] = src[i];
-            i++;
-        }
-        dest[i] = '\0';
-    }
-    
-    return (srclen);  
+	i = 0;
+	srclen = ft_strlen(src);
+	if (size != 0)
+	{
+		while (src[i] && i < size - 1)
+		{
+			dest[i] = src[i];
+			i++;
+		}
+		dest[i] = '\0';
+	}
+	return (srclen);
 }
 // int main()
 // {

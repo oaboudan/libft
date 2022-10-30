@@ -6,30 +6,30 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 20:45:00 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/25 22:42:56 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/10/30 23:13:55 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
- void *ft_memmove(void *dst, const void *src, size_t len)
- {
-    size_t  i;
-     char *dst1;
-     char *src1;
-     
-     dst1 = (char *)dst;
-     src1 = (char *)src;
-     i = 0;
-    
-      if (dst1 > src1)
-      {
-        while (len--)
-            dst1[len] = src1[len]; 
-      }
-      else
-        dst1 = (char *)ft_memcpy(dst,src,len);
-     return ((void *)dst);
- }
+
+void	*ft_memmove(void *dst, const void *src, size_t len)
+{
+	size_t	i;
+	char	*dst1;
+	char	*src1;
+
+	dst1 = (char *)dst;
+	src1 = (char *)src;
+	i = 0;
+	if (dst1 > src1)
+	{
+		while (len--)
+			dst1[len] = src1[len];
+	}
+	else
+		dst1 = (char *)ft_memcpy(dst, src, len);
+	return ((void *)dst);
+}
 //  int main()
 // {
 //   int i;
