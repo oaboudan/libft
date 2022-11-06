@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 21:33:13 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/31 00:16:04 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:27:27 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,3 @@ char	*ft_strtrim(const char *s1, const char *set)
 		j--;
 	return (ft_substr(s1, i, j - i + 1));
 }
-
-// int main(){
-//     printf("%s\n", ft_strtrim("oussama", "oua"));
-// }

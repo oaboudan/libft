@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 13:32:02 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/30 23:47:01 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:19:42 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	return (srclen);
 }
-// int main()
-// {
-//     char s1[] = "aboudan hamza";
-// 	char s2[] = "hamza";
-//     printf("%zu \n",strlcpy(dest,src,5));
-//     printf("%s",dest);
-// }

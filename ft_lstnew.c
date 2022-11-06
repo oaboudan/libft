@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 01:30:10 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/31 00:32:43 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:18:13 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,3 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
-
-// int main()
-// {
-// 	t_list *t1, *t2, *t3;
-// 	t1 = ft_lstnew("oussama");
-// 	t2 = ft_lstnew("chaimaa");
-// 	t1->next = t2;
-// 	while (t1)
-// 	{
-// 		printf("%s\n", t1->content);
-// 		t1 = t1->next;
-// 	}
-// }

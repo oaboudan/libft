@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 22:00:38 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/30 23:06:01 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/04 02:27:51 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-// int main(){
-//     printf("%s\n", ft_itoa(2147483647));
-// }

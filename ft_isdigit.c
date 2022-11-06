@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 15:22:02 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/30 22:58:13 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:17:40 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,3 @@ int	ft_isdigit(int g)
 {
 	return (g >= '0' && g <= '9');
 }
-// int main()
-// {
-// 	int bb = '9';
-// 	int i = ft_isdigit(bb);
-
-// 		printf("%d", i);
-
-// }

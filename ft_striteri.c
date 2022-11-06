@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 16:17:29 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/30 23:38:00 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:28:18 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-// void fnnnnnn(unsigned int i, char *c)
-// {
-// 	*c= *c - 32 ;
-// }
-
-// int main()
-// {
-// 	char str[] = "abcdef";
-// 	ft_striteri(str, fnnnnnn);
-// 	printf("%s", str);
-// }

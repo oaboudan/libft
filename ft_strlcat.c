@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 15:18:47 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/30 23:44:26 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/03 00:25:33 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,16 +33,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	return (ft_strlen(src) + dstsize);
 }
-// int main()
-// {
-//     char src[] = "OUSSAM";
-//     char dst[20] = "1234";
-//     char src2[] = "OUSSAM";
-//     char dst2[20] = "1234";
-
-//     printf("%zu\n",strlcat(dst,src,6));
-//     printf("%s\n",dst);
-
-//     printf("%zu\n",ft_strlcat(dst2,src2,6));
-//     printf("%s\n",dst2);
-// }

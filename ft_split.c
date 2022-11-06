@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 18:18:32 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/30 23:31:25 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:26:14 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,35 +27,6 @@ static int	scount(char *str, int c)
 	}
 	return (count);
 }
-
-// static char *ft_fill(char *str, int c)
-// {
-//     int i;
-//     int start;
-//     int end;
-//     int len;
-//     char    *res;
-
-//     i = 0;
-//     start = 0;
-//     while (str[start] && str[start] == c)
-//         start++;
-//     end = start;
-//     while (str[end] && str[end] != c)
-//         end++;
-//     len = end - start;
-//     res = (char *)malloc(len + 1);
-//     if (!res)
-//         return (NULL);
-//     while (i < len)
-//     {
-//         res[i] = str[start];
-//         i++;
-//         start++;
-//     }
-//     res[i] = '\0';
-//     return (res);
-// }
 
 static char	**ft_free(char **ptr, int i)
 {

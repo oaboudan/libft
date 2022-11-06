@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 13:18:50 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/30 22:58:49 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/01 20:19:53 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,3 @@ int	ft_isprint(int c)
 {
 	return (c >= 32 && c < 127);
 }
-// int main()
-// {
-// 	printf("r = %d\n", ft_isprint('~' + 1));
-// 	printf("r = %d\n", isprint('~' + 1));
-// }

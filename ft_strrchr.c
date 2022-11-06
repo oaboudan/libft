@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 13:00:37 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/31 00:14:11 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:58:59 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,18 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	int		i;
+	char	*p;
 
 	i = ft_strlen(s);
-	if (c < 0 || c > 128)
-		return ((char *)s);
+	p = (char *)s;
+	if (!p)
+		return (NULL);
 	while (i >= 0)
 	{
-		if (s[i] == c)
-			return ((char *)&s[i]);
+		if (p[i] == (char)c)
+			return ((char *)&p[i]);
 		i--;
 	}
 	return (0);
 }
-// int main()
-// {
-// 	char s[] = "tripouille";
-//     char s2[] = "ltripouiel";
-//     char s3[] = "";
-// 	const char bb[] = "oussama @boudan";
-// 	printf("%s\n",ft_strrchr(s3, 0));
-// 	//printf("%s",strrchr(s3, 0));	
-// }

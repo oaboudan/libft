@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 01:57:18 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/31 00:33:21 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:18:18 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (size);
 }
-// int main()
-// {
-// 	t_list *t1, *t2;
-
-// 	t1 = ft_lstnew("oussama");
-// 	t2 = ft_lstnew("aboudan");
-// 	t1->next = t2;
-// 	printf("%d",ft_lstsize(t1));
-// }

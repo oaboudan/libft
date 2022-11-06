@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 16:28:34 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/30 23:10:36 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/05 18:46:53 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	return (str1[i] - str2[i]);
 }
-//  int main()
-// {
-//     char s[] = {-128, 0, 127, 0};
-//     char sCpy[] = {-128, 0, 127, 0};
-//     char s2[] = {0, 0, 127, 0};
-//     char s3[] = {0, 0, 42, 0};
-
-//     printf("%d\n",ft_memcmp(s, sCpy, 2));
-//     printf("%d\n",memcmp(s, sCpy, 2));
-//     // printf("%d\n",memcmp(s, s2, 0));
-// }

@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 19:58:18 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/30 23:19:01 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:18:26 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		dst1[i] = src1[i];
 		i++;
 	}
-	return ((void *)dst);
+	return ((void *)dst1);
 }

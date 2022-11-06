@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 22:54:36 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/30 23:22:27 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/02 23:58:32 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,6 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 	{
 		ft_putnbr_fd(a / 10, fd);
-		ft_putnbr_fd(a % 10, fd);
+		ft_putchar_fd(((a % 10) + '0'), fd);
 	}
 }

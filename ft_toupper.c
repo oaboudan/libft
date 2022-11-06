@@ -6,7 +6,7 @@
 /*   By: oaboudan <oaboudan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 14:33:34 by oaboudan          #+#    #+#             */
-/*   Updated: 2022/10/31 00:22:01 by oaboudan         ###   ########.fr       */
+/*   Updated: 2022/11/04 20:27:38 by oaboudan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-// int main()
-// {
-// 	char bb = '^';
-// 	printf("%d\n",ft_toupper(bb));
-// 	//printf("%d",toupper(bb));
-// }
